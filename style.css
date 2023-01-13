@@ -131,10 +131,10 @@ a:hover::before {
 
 /* Etusivun taustakuva */
 
-.taustakuva {
+.bgShowcase {
     width: 100%;
     height:100vh;
-    background: url("/images/background_1.jpg");
+    background: url("background_1.jpg");
     background-size:cover;
     position:relative;
     padding-bottom: 1;
@@ -191,13 +191,13 @@ a:hover::before {
 
 /* Thirdsec tyylit */
 
-.thirdsec {
+.skillSec {
   padding-top: 90px;
 }
-.thirdsec h4 {
+.skillSec h4 {
   font-size: 1.5em;
 }
-.thirdsec p {
+.skillSec p {
   font-size: 1.2em;
 }
 
@@ -207,10 +207,10 @@ a:hover::before {
   padding-top: 78px;
 }
 
-.wrapper {
+.bgContact {
   height: 100vh;
   width: 100%;
-  background: url("/images/businessman.jpg");
+  background: url("businessman.jpg");
   background-size: cover;
   background-repeat:no-repeat;
 }

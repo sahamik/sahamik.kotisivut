@@ -1,0 +1,272 @@
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* Vertikaalinen keskittäminen */
+.v-center {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%
+}
+
+/* Horisontaalinen oikea tasaus */
+.h-right {
+  position: absolute;
+  right: 0;
+}
+
+
+/* Navbar */
+
+.navbar {
+  background: rgba(0,0,0,.8);
+  width: auto;
+}
+
+
+/* Navbarin linkkien tyylit */
+
+.navbar-brand {
+  text-decoration: none;
+  font-size: 100px;
+}
+
+a.navbar-brand p {
+  margin-top: 10px;
+  margin-left: 40px;
+  color:rgb(255, 255, 255);
+}
+a.navbar-brand p:hover {
+  color:rgb(243, 237, 237);
+}
+
+a.navbar-brand:link {
+  font-size: 25px;
+}
+
+.nav-link {
+  color:rgb(191, 189, 189);
+  text-decoration: none;
+}
+
+a.nav-link:link {
+  color:rgb(191, 189, 189);
+  font-size: 20px;
+}
+a.nav-link:hover {
+  color:rgb(255, 255, 255);
+}
+
+
+/* Hamburger menu color */
+
+.navbar-toggler {
+  background: rgb(122, 122, 122);
+  display: block;
+}
+.navbar-toggler:hover {
+  background-color: rgb(132, 0, 255);
+  color: black;
+}
+
+/* Navbarin linkkien efektit */
+
+a.nav-link {
+  background-image: linear-gradient(
+    to right,
+    rgb(132, 0, 255),
+    rgb(132, 0, 255) 50%,
+    rgb(191, 189, 189) 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+a.navbar-brand:before {
+  content: '';
+  background: rgb(132, 0, 255);
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+a.nav-link:before {
+  content: '';
+  background: rgb(132, 0, 255);
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+ background-position: 0;
+}
+
+a:hover::before {
+  width:100%;
+}
+
+
+/* Etusivun taustakuva */
+
+.taustakuva {
+    width: 100%;
+    height:100vh;
+    background: url("/images/background_1.jpg");
+    background-size:cover;
+    position:relative;
+    padding-bottom: 1;
+}
+
+.social-icon {
+  color:rgb(196, 196, 196);
+  transition: color 0.2s;
+  text-decoration: none;
+  font-size: 35px;
+}
+
+.social-icon:hover {
+  color:rgb(132, 0, 255);
+}
+
+/* Showcase tyylit */
+
+.hero_otsikko {
+    font-size: 4.5rem;
+}
+.hero_kuvaus {
+    font-size: 2rem;
+}
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+}
+
+/* About section kuva css */
+
+.aboutSivuKuva {
+  width: 75%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+/* About section tyylit */
+
+.about {
+  background-color:rgb(255, 255, 255);
+  margin: 0;
+  padding-top: 70px;
+  font-size: 1.2em;
+}
+
+.card {
+  background-color: rgb(255, 255, 255);
+}
+
+/* Thirdsec tyylit */
+
+.thirdsec {
+  padding-top: 90px;
+}
+.thirdsec h4 {
+  font-size: 1.5em;
+}
+.thirdsec p {
+  font-size: 1.2em;
+}
+
+/* Contact section tyylit */
+
+.contact {
+  padding-top: 78px;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100%;
+  background: url("/images/businessman.jpg");
+  background-size: cover;
+  background-repeat:no-repeat;
+}
+
+.cover {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8)
+}
+
+.contact-me {
+  margin-top: 120px;
+  margin-bottom: 0px;
+
+}
+
+.contact-me h2, p {
+  color: #fff
+}
+.contact-me #text {
+  color: #7B1FA2;
+}
+
+.contact {
+  width: 100%;
+  height: 100vh;
+}
+
+.contactInfo {
+  justify-content: center;
+  align-items: center;
+  margin-left: 200px;
+  margin-top: 70px;
+}
+
+.address {
+  margin-top: 14px;
+  margin-left: 15px;
+  text-align: left;
+}
+
+.address span {
+  color: #7B1FA2
+}
+
+.icons {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.icons i {
+  font-size: 20px
+}

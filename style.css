@@ -36,16 +36,19 @@ body {
 
 .navbar-brand {
   text-decoration: none;
-  font-size: 100px;
+  
 }
 
 a.navbar-brand p {
   margin-top: 10px;
   margin-left: 40px;
   color:rgb(255, 255, 255);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3em;
+  font-weight: bold;
 }
 a.navbar-brand p:hover {
-  color:rgb(243, 237, 237);
+  color:rgb(237, 238, 243);
 }
 
 a.navbar-brand:link {
@@ -69,11 +72,11 @@ a.nav-link:hover {
 /* Hamburger menu color */
 
 .navbar-toggler {
-  background: rgb(122, 122, 122);
-  display: block;
+  background: rgb(52, 63, 82);
+  
 }
 .navbar-toggler:hover {
-  background-color: rgb(132, 0, 255);
+  background-color: #6200d9;
   color: black;
 }
 
@@ -82,10 +85,9 @@ a.nav-link:hover {
 a.nav-link {
   background-image: linear-gradient(
     to right,
-    rgb(132, 0, 255),
-    rgb(132, 0, 255) 50%,
-    rgb(191, 189, 189) 50%
-  );
+    #b67cfd,
+    #6200d9 50%,
+    rgb(240, 237, 243) 50% );
   background-size: 200% 100%;
   background-position: -100%;
   display: inline-block;
@@ -98,7 +100,7 @@ a.nav-link {
 
 a.navbar-brand:before {
   content: '';
-  background: rgb(132, 0, 255);
+  background: #6200d9;
   display: block;
   position: absolute;
   bottom: -3px;
@@ -110,7 +112,7 @@ a.navbar-brand:before {
 
 a.nav-link:before {
   content: '';
-  background: rgb(132, 0, 255);
+  background: #6200d9;
   display: block;
   position: absolute;
   bottom: -3px;
@@ -134,7 +136,7 @@ a:hover::before {
 .bgShowcase {
     width: 100%;
     height:100vh;
-    background: url("background_1.jpg");
+    background: url(background_1.jpg);
     background-size:cover;
     position:relative;
     padding-bottom: 1;
@@ -148,7 +150,7 @@ a:hover::before {
 }
 
 .social-icon:hover {
-  color:rgb(132, 0, 255);
+  color:rgb(52, 63, 82);
 }
 
 /* Showcase tyylit */
@@ -173,7 +175,7 @@ a:hover::before {
 .aboutSivuKuva {
   width: 75%;
   height: 100%;
-  border-radius: 20px;
+  border-radius: 8px;
 }
 
 /* About section tyylit */
@@ -181,18 +183,27 @@ a:hover::before {
 .about {
   background-color:rgb(255, 255, 255);
   margin: 0;
-  padding-top: 70px;
+  padding-top: 80px;
   font-size: 1.2em;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
 }
 
 .card {
-  background-color: rgb(255, 255, 255);
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));;
+  gap: 20px;
+  height: 200px;
+  align-items: stretch;
+  border-radius: 8px;
 }
 
-/* Thirdsec tyylit */
+/* Skillsec tyylit */
 
 .skillSec {
-  padding-top: 90px;
+  padding-top: 100px;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
 }
 .skillSec h4 {
   font-size: 1.5em;
@@ -204,46 +215,43 @@ a:hover::before {
 /* Contact section tyylit */
 
 .contact {
-  padding-top: 78px;
+  padding-top: 70px;
 }
 
 .bgContact {
-  height: 100vh;
-  width: 100%;
+  justify-content: center;
+  display: flex;
+  margin: auto;
+  height: 75vh;
+  width: 65%;
   background: url("businessman.jpg");
   background-size: cover;
   background-repeat:no-repeat;
+  border-radius: 10px;
 }
 
 .cover {
+  border-radius: 10px;
+  justify-content: center;
+  display: flex;
+  margin: auto;
   width: 100%;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.8)
-}
-
-.contact-me {
-  margin-top: 120px;
-  margin-bottom: 0px;
-
+  height: 75vh;
+  background: rgba(21, 21, 21, 0.8)
+  
 }
 
 .contact-me h2, p {
-  color: #fff
+  color: #fff;
 }
 .contact-me #text {
-  color: #7B1FA2;
+  color: #9c4ffb;
+  font-size: 1.2em;
 }
 
 .contact {
   width: 100%;
   height: 100vh;
-}
-
-.contactInfo {
-  justify-content: center;
-  align-items: center;
-  margin-left: 200px;
-  margin-top: 70px;
 }
 
 .address {
@@ -253,7 +261,7 @@ a:hover::before {
 }
 
 .address span {
-  color: #7B1FA2
+  color: #9c4ffb;
 }
 
 .icons {
@@ -269,4 +277,13 @@ a:hover::before {
 
 .icons i {
   font-size: 20px
+}
+
+/* Footer tyylit */
+
+footer {
+  background-color: rgba(0,0,0,.8);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
 }

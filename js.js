@@ -1,3 +1,5 @@
+// Hamburger menu sulkeutuminen, kun linkkiä painetaan tai klikataan muualle
+
 const navbarToggler = document.querySelector(".navbar-toggler");
     const navbarCollapse = document.querySelector(".collapse");
     const navLinks = document.querySelectorAll(".nav-link");
@@ -18,4 +20,16 @@ const navbarToggler = document.querySelector(".navbar-toggler");
         }
     });
 
-   
+   // Navbarin tausta tummaksi kun scrollataan alaspäin
+
+const header = document.querySelector('.navbar');
+
+    window.onscroll = function() {
+    var top = window.scrollY;
+    if(top >=500) {
+        header.classList.add('navbarDark');
+    }
+    else {
+        header.classList.remove('navbarDark');
+    }
+}

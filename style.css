@@ -8,6 +8,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background: linear-gradient(89.7deg, rgb(0, 0, 0) -10.7%, rgb(53, 92, 125) 88.8%);
 }
 
 /* Vertikaalinen keskittäminen */
@@ -40,7 +41,7 @@ body {
 
 .navbar-brand {
   text-decoration: none;
-  
+  padding-left: 50px;
 }
 
 a.navbar-brand p {
@@ -56,7 +57,10 @@ a.navbar-brand p:hover {
 }
 
 a.navbar-brand:link {
-  font-size: 25px;
+  font-size: 35px;
+}
+.navbar-brand span {
+  text-shadow: 13px 12px rgb(134, 137, 139);
 }
 
 .nav-link {
@@ -77,12 +81,11 @@ a.nav-link:hover {
 /* Hamburger menu color */
 
 .navbar-toggler {
-  background: rgb(52, 63, 82);
+  background: rgb(7, 72, 110);
   
 }
 .navbar-toggler:hover {
-  background-color: #212033;
-  color: black;
+  background-color: rgb(4, 48, 74);
 }
 
 /* Navbarin linkkien efektit */
@@ -90,7 +93,7 @@ a.nav-link:hover {
 a.nav-link {
   background-image: linear-gradient(
     to right,
-    #ff006a,
+    #3291c1,
     #49d8ff 50%,
     rgb(237, 238, 243) 50% );
   background-size: 200% 100%;
@@ -130,30 +133,32 @@ a:hover::before {
 .bgShowcase {
     width: 100%;
     height:100vh;
-    background: url(bg2.jpg);
-    background-size:cover;
     position:relative;
     padding-bottom: 1;
 }
 
 .social-icon {
-  color:rgb(196, 196, 196);
+  color:rgb(134, 137, 139);
   transition: color 0.2s;
   text-decoration: none;
   font-size: 35px;
 }
 
 .social-icon:hover {
-  color:rgb(52, 63, 82);
+  color:rgb(39, 128, 184);
 }
 
 /* Showcase tyylit */
 
 .hero_otsikko {
-    font-size: 3.5rem;
+    font-size: 3.8rem;
+}
+.hero_otsikko span {
+  color: rgb(134, 137, 139);
 }
 .hero_kuvaus {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
+    padding: 0 100px;
 }
 .hero-text {
     text-align: center;
@@ -175,12 +180,13 @@ a:hover::before {
 /* About section tyylit */
 
 .about {
-  background-color:rgb(255, 255, 255);
+  color: #e5e5e5;
   margin: 0;
-  padding-top: 80px;
+  padding-top: 100px;
   font-size: 1.2em;
-  font-family: 'Lato', sans-serif;
-  font-weight: bold;
+}
+.about p {
+  color: #e5e5e5;
 }
 
 .card {
@@ -195,9 +201,12 @@ a:hover::before {
 /* Skillsec tyylit */
 
 .skillSec {
-  padding-top: 100px;
-  font-family: 'Lato', sans-serif;
-  font-weight: bold;
+  padding-top: 125px;
+  padding-bottom: 65px;
+  margin-bottom: -49px;
+}
+.skillSec h1 {
+  color: #fff;
 }
 .skillSec h4 {
   font-size: 1.5em;
@@ -205,34 +214,17 @@ a:hover::before {
 .skillSec p {
   font-size: 1.2em;
 }
+.skillSec i {
+  color: rgb(53, 92, 125);
+}
 
 /* Contact section tyylit */
-
-.contact {
-  padding-top: 70px;
-}
 
 .bgContact {
   justify-content: center;
   display: flex;
-  margin: auto;
-  height: 75vh;
-  width: 65%;
-  background: url("businessman.jpg");
-  background-size: cover;
-  background-repeat:no-repeat;
-  border-radius: 10px;
-}
-
-.cover {
-  border-radius: 10px;
-  justify-content: center;
-  display: flex;
-  margin: auto;
+  height: 100vh;
   width: 100%;
-  height: 75vh;
-  background: rgba(5, 8, 44, 0.8)
-  
 }
 
 .contact-me h2, p {
@@ -246,6 +238,10 @@ a:hover::before {
 .contact {
   width: 100%;
   height: 100vh;
+  padding-top: 80px;
+}
+.contactInfo {
+  padding-top: 80px;
 }
 
 .address {
@@ -276,13 +272,9 @@ a:hover::before {
 /* Footer tyylit */
 
 footer {
-  background-image: url(bg2.jpg);
-  background-size: cover;
+  position: absolute;
+  width: 100%;
   color: #fff;
-  padding: 20px;
+  padding: 28px 0;
   text-align: center;
-}
-footer a {
-  color: #c7c7c7;
-  font-size: 0.9rem;
 }

@@ -34,19 +34,30 @@
     #navmenu {
         margin-left: -12px;
     }
+    a.nav-link {
+        background-image: linear-gradient(
+    to right,
+    #3291c1,
+    #49d8ff 50%,
+    rgb(39, 127, 179) 50% );
+    }
 
     #links {
         position: absolute;
         display: block;
-        background-color: rgba(0,0,0,.8);
+        background-color: rgba(0, 0, 0, 0.908);
         border-radius: 0px 0px 5px 5px;
         margin-top: -3px;
         padding: 15px 20px;
         width: 170px;
-        height: 220px;
+        height: 100vh;
+    }
+    .nav-item {
+        padding-bottom: 100px;
     }
     .navbar-brand {
         margin-left: 10px;
+        padding-left: 0;
     }
 
     .hero_otsikko {
@@ -72,11 +83,13 @@
         display: block;
     }
     .bgContact {
-        width: 93%;
+        width: 100%;
+        height: 100vh;;
     }
       
       .cover {
         width: 100%;
+        height: 100vh;
       }
 
     .contactInfo {
